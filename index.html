@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buenas Viagens!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav>
+  <a href="#" class="nav-logo">Buenas Viagens!</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu">
+    <i class="fa fa-bars"></i>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#">Home</a></li>
+    <li><a href="#passeios">Passeios</a></li>
+    <li><a href="#destinos">Destinos</a></li>
+    <li><a href="#avaliacoes">Avaliações</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>EXPLORE O MUNDO!</h1>
+  </div>
+  <div class="search-bar">
+    <div class="search-field">
+      <label for="destino">Para onde vamos?</label>
+      <input type="text" id="destino" placeholder="Digite o destino..." />
+    </div>
+    <div class="search-field">
+      <label for="quando">Quando?</label>
+      <input type="date" id="quando" />
+    </div>
+    <div class="search-field">
+      <label for="retorno">Retorno</label>
+      <input type="date" id="retorno" />
+    </div>
+    <button class="btn-buscar">Buscar</button>
+  </div>
+</section>
+
+<section class="passeios" id="passeios">
+  <div class="passeios-inner">
+    <div class="passeios-text">
+      <h2>Próximos Passeios &amp; Destinos</h2>
+      <div class="passeios-divider"></div>
+      <p>
+        Descubra os melhores roteiros selecionados pela nossa equipe de especialistas. 
+        Oferecemos experiências únicas e inesquecíveis para quem quer explorar o mundo com conforto, 
+        segurança e custo-benefício. De praias paradisíacas a cidades históricas, temos a viagem perfeita 
+        esperando por você. Aproveite nossas promoções exclusivas e garanta já a sua vaga!
+      </p>
+      <a href="#destinos" class="btn-saiba">Saiba mais</a>
+    </div>
+    <div class="passeios-grid">
+      <img src="https://images.unsplash.com/photo-1502791451862-7bd8c1df43a7?w=400&q=80" alt="Família na praia" />
+      <img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?w=400&q=80" alt="Viajante aventureiro" />
+      <img src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?w=400&q=80" alt="Fotógrafa viajante" />
+      <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=400&q=80" alt="Paisagem montanhosa" />
+    </div>
+  </div>
+</section>
+
+<section class="destinos" id="destinos">
+  <div class="destinos-header">
+    <p class="section-eyebrow">Explore o planeta</p>
+    <h2>Destinos em Destaque</h2>
+    <p>Conheça os pacotes mais procurados pelos nossos viajantes</p>
+  </div>
+  <div class="destinos-grid">
+
+    <div class="dest-card">
+      <img src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=600&q=80" alt="Barcelona" />
+      <div class="dest-card-body">
+        <h3>Barcelona <span>, Espanha</span></h3>
+        <p>Arquitetura modernista, praias vibrantes e gastronomia incrível esperam por você na cidade de Gaudí.</p>
+        <div class="dest-card-footer">
+          <div>
+            <div class="price-now">R$ 3.900,00</div>
+            <div class="price-old">R$ 4.400,00</div>
+          </div>
+          <button class="btn-saiba-sm">Saiba mais</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="dest-card">
+      <img src="https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=600&q=80" alt="Porto" />
+      <div class="dest-card-body">
+        <h3>Porto <span>, Portugal</span></h3>
+        <p>Uma cidade de charme único, com pontes históricas, vinhos do Porto e paisagens deslumbrantes.</p>
+        <div class="dest-card-footer">
+          <div>
+            <div class="price-now">R$ 3.700,00</div>
+            <div class="price-old">R$ 4.300,00</div>
+          </div>
+          <button class="btn-saiba-sm">Saiba mais</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="dest-card">
+      <img src="https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=600&q=80" alt="Milão" />
+      <div class="dest-card-body">
+        <h3>Milão <span>, Itália</span></h3>
+        <p>A capital da moda mundial também oferece arte renascentista, culinária refinada e arquitetura deslumbrante.</p>
+        <div class="dest-card-footer">
+          <div>
+            <div class="price-now">R$ 3.500,00</div>
+            <div class="price-old">R$ 4.200,00</div>
+          </div>
+          <button class="btn-saiba-sm">Saiba mais</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="dest-card">
+      <img src="https://images.unsplash.com/photo-1486299267070-83823f5448dd?w=600&q=80" alt="Londres" />
+      <div class="dest-card-body">
+        <h3>Londres <span>, Reino Unido</span></h3>
+        <p>Da Torre de Londres ao West End, a capital britânica tem algo para todos os gostos e estilos.</p>
+        <div class="dest-card-footer">
+          <div>
+            <div class="price-now">R$ 4.100,00</div>
+            <div class="price-old">R$ 4.800,00</div>
+          </div>
+          <button class="btn-saiba-sm">Saiba mais</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="dest-card">
+      <img src="https://th.bing.com/th/id/R.d6f6cd893e980bf4a6aa789f9d90dc2c?rik=rwAEh0k9kWP1Ag&riu=http%3a%2f%2feurotripblog.com%2fwp-content%2fuploads%2f2025%2f07%2fInterlaken-3-800x533.webp&ehk=cQbcCgmmU9GS851hmRdeYv8ksGPWrBR49S8uGMqeHRw%3d&risl=&pid=ImgRaw&r=0" alt="Suíça" />
+      <div class="dest-card-body">
+        <h3>Interlaken <span>, Suíça</span></h3>
+        <p>Montanhas cobertas de neve, lagos cristalinos e a melhor infraestrutura turística da Europa.</p>
+        <div class="dest-card-footer">
+          <div>
+            <div class="price-now">R$ 5.200,00</div>
+            <div class="price-old">R$ 6.000,00</div>
+          </div>
+          <button class="btn-saiba-sm">Saiba mais</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="dest-card">
+      <img src="https://images.unsplash.com/photo-1431274172761-fca41d930114?w=600&q=80" alt="Paris" />
+      <div class="dest-card-body">
+        <h3>Paris <span>, França</span></h3>
+        <p>A cidade do amor encanta com sua Torre Eiffel, museus de classe mundial e culinária incomparável.</p>
+        <div class="dest-card-footer">
+          <div>
+            <div class="price-now">R$ 4.400,00</div>
+            <div class="price-old">R$ 5.100,00</div>
+          </div>
+          <button class="btn-saiba-sm">Saiba mais</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer id="avaliacoes">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="#" class="nav-logo" style="color:#fff;">Buenas Viagens!</a>
+      <p>Sua agência de confiança para explorar o mundo com tranquilidade, conforto e os melhores preços do mercado.</p>
+      <div class="footer-socials">
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Links Rápidos</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#passeios">Passeios</a></li>
+        <li><a href="#destinos">Destinos</a></li>
+        <li><a href="#">Avaliações</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Destinos</h4>
+      <ul>
+        <li><a href="#">Barcelona</a></li>
+        <li><a href="#">Porto</a></li>
+        <li><a href="#">Milão</a></li>
+        <li><a href="#">Paris</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contato</h4>
+      <ul>
+        <li><a href="mailto:contato@buenasviagens.com.br">contato@buenasviagens.com.br</a></li>
+        <li><a href="tel:+5585999999999">(85) 9 9999-9999</a></li>
+        <li><a href="#">Fortaleza – CE</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2026 Buenas Viagens! — Todos os direitos reservados.
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
